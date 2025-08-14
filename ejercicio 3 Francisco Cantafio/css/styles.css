@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("https://fondosmil.com/fondo/27569.jpg");
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.calculator #display {
+  margin: 0 10px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: auto;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  box-shadow: 0px 0px 15px rgba(0, 248, 153, 0.507);
+  text-shadow: 2px 2px 3px salmon;
+  grid-column: 1 / 5;
+}
+.calculator #equal {
+  height: 130px;
+}
+.calculator #clear {
+  background-color: #ffd5d8;
+  color: #fc4552;
+}
+.calculator .btn-number {
+  background-color: #c3eaff;
+  color: #000000;
+}
+.calculator .btn-operator {
+  background-color: #ffd0fb;
+  color: #f967f3;
+}
+.btn-ecual {
+    background-color: #adf9d7;
+    color: #000000;
+    grid-column: 4;
+    grid-row: span 2;
+}
+.calculator.dark #display {
+  color: black;
+}
+.calculator.dark #clear {
+  background-color: #4c35aa;
+  color: #fff;
+}
+.calculator.dark .btn-number {
+  background-color: #8defa6;
+  color: #000000;
+  font-weight: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: #f0db4f;
+  color: #aa00a4;
+}
+.calculator.dark .btn-ecual {
+  color: #fff;
+  grid-row: 7 / 5;
+  grid-column: 4;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#display {
+  grid-column: 1 / 5;
+  background-color: #398aa5;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30%;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-image: linear-gradient(30deg, #ADD8E6, #287f9c, #0c4b94);
+  text-shadow: 2px 2px 3px rgba(255, 192, 203, 0.986);
+  box-shadow: 1px 5px 5px 1px rgba(0, 248, 153, 0.507);
+}
+
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=styles.css.map */
+
+.theme-toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggler-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggler.active {
+  background-color: #333;
+}
+
+.theme-toggler.active .toggler-icon {
+  background-color: #ddd;
+}
+
+
+
+
+.calculator {
+    background-color: #fff;
+}
+
+.calculator #display {
+    color: #0a1e23;
+}
+
+.calculator #clear {
+    background-color: #ffd5d8;
+    color: #fc4552;
+}
+
+.calculator .btn-number {
+    background-color: #c3eaff;
+    color: #000000;
+}
+
+.calculator .btn-operator {
+    background-color: #ffd0fb;
+    color: #f967f3;
+}
+
+.calculator .btn-ecual {
+    background-color: #adf9d7;
+    color: #000000;
+}
+
+.calculator.dark {
+    background-color: #1b1b1b;
+}
+
+.calculator.dark #display {
+    color: #f8fafb;
+}
+
+.calculator.dark #clear {
+    background-color: #4c35aa;
+    color: #fff;
+}
+
+.calculator.dark .btn-number {
+    background-color: #8defa6;
+    color: #000000;
+    font-weight: 600;
+}
+
+.calculator.dark .btn-operator {
+    background-color: #f0db4f;
+    color: #aa00a4;
+}
+
+.calculator.dark .btn-ecual {
+    background-color: #f23b00;
+    color: #fff;
+    grid-column: 4;
+    grid-row: span 2;
+}
