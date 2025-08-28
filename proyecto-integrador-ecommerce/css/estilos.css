@@ -1,0 +1,228 @@
+/* BODY GLOBAL */
+body {
+    background-color: #1a221e; /* color de fondo original */
+    margin: 0;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* MAIN */
+main {
+    background-color: #1a221e; /* mismo que body */
+    padding: 25px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a221e;
+    color: white;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+/* SECCIONES DE CARTAS (INICIO) */
+main .cards-container {
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section {
+    border: 3px solid #d7d7d7;
+    width: 350px;
+    padding: 15px;
+    background-color: #2b2121; /* fondo de cartas */
+    color: white;
+    margin: 60px 25px 45px 25px;
+    border-radius: 15px;
+}
+
+section img {
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* ANIMACION DE HOVER */
+section:hover {
+    position: relative;
+    animation: mymove 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 100px;}
+}
+
+section:not(:hover) {
+    position: relative;
+    animation: mymove-back 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes mymove-back {
+    from {bottom: 100px;}
+    to {bottom: 0px;}
+}
+
+section h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section-cards-header h1 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* TEXTO DE PRECIO */
+.precio {
+    color: pink;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px) {
+    main .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Header y navegación */
+@media(max-width:900px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    #barra-busqueda {
+        width: 100%;
+        line-height: 40px;
+    }
+
+    #boton-carrito {
+        width: 50px;
+        height: 40px;
+        font-size: 28px;
+    }
+
+    #logo {
+        width: 50px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+}
+
+/* Footer responsive */
+@media(max-width:600px) {
+    footer {
+        height: 80px;
+        line-height: 80px;
+        font-size: 18px;
+    }
+}
+
+/* HEADER TOP */
+#header-top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #555;
+}
+
+/* LOGO */
+#logo {
+    height: 54px;
+    width: 10%;
+    background-color:#3f483d;
+    text-align: center;
+    line-height: 54px;
+    font-size: 40px;
+}
+
+/* BARRA DE BUSQUEDA */
+#barra-busqueda {
+    background-color: #3f483d;
+    width: 85%;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+}
+
+#barra-busqueda form label {
+    background-color:#878b74; 
+    padding: 2px;
+}
+
+#barra-busqueda form input {
+    padding: 2px;
+    width: 50%;
+    color: white;
+    background-color:#5e6555;
+    border: none;
+    border-radius: 5px;
+}
+
+#barra-busqueda form input[type="submit"] {
+    background-color:#5e6555; 
+    color: white;
+    width: 60px;
+    cursor: pointer;
+}
+
+/* BOTON CARRITO */
+#boton-carrito {
+    background-color: #29312b;
+    width: 5%;
+    height: 54px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 54px;
+}
+
+/* NAV PRINCIPAL */
+#nav-main {
+    background-color: #1a221e;
+}
+
+#nav-main ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+#nav-main ul li {
+    margin: 5px;
+}
+
+#nav-main ul li a {
+    text-decoration: none;
+    display: block;
+    background-color: #878b74;
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#nav-main ul li a:hover {
+    background-color: #5e6555;
+}
+
+/* RESPONSIVE NAV */
+@media(max-width:900px) {
+    #nav-main ul {
+        flex-direction: column;
+    }
+}

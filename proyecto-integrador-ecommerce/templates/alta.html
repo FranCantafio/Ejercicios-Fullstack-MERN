@@ -1,0 +1,78 @@
+<div id="template-alta">
+    <h1>Alta de productos</h1>
+
+    <form onsubmit="agregar(event)" class="alta-form">
+        <div class="input-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required maxlength="40">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="precio">Precio</label>
+            <input type="number" step="0.00" name="precio" id="precio" required min="0">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="stock">Stock</label>
+            <input type="number" name="stock" id="stock" required min="0" max="99">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="desarrollador">Desarrollador</label>
+            <input type="text" name="desarrollador" id="desarrollador">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="categoria">Categoría</label>
+            <input type="text" name="categoria" id="categoria">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="descripcion-corta">Descripción corta</label>
+            <input type="text" name="descripcion-corta" id="descripcion-corta">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="descripcion-larga">Descripción larga</label>
+            <input type="text" name="descripcion-larga" id="descripcion-larga">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="edad-desde">Edad desde</label>
+            <input type="text" name="Edad-desde" id="edad-desde">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="edad-hasta">Edad hasta</label>
+            <input type="text" name="Edad-hasta" id="edad-hasta">
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="foto">Foto</label>
+            <input type="text" name="foto" id="foto" required>
+            <div class="error-detail"></div>
+        </div>
+
+        <div class="input-group">
+            <input type="checkbox" name="envio-sin-cargo" id="envio">
+            <label for="envio">Envío sin cargo</label>
+            <div class="error-detail"></div>
+        </div>
+
+        <button>Agregar</button>
+    </form>
+
+    <hr>
+
+    <h2>Lista de productos disponibles</h2>
+    <table></table>
+</div>
