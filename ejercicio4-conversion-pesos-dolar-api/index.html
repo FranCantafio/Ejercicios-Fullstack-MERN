@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Pesos a Dólares</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+    .container h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .result {
+      margin-top: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .checkbox-container label {
+      margin-left: 5px;
+    }
+    .timestamp {
+      margin-top: 10px;
+      font-size: 0.9em;
+      text-align: center;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Conversor ARS a USD</h2>
+
+    <label for="pesos">Monto en Pesos:</label>
+    <input type="number" id="pesos" placeholder="Ej: 1000">
+
+    <label for="cotizacion">Cotización Dólar:</label>
+    <input type="number" id="cotizacion" placeholder="Ej: 1000" step="0.01">
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="autoUpdate">
+      <label for="autoUpdate">Actualizar cotización automáticamente</label>
+    </div>
+
+    <div class="result" id="resultado">USD $0.00</div>
+    <div class="timestamp" id="timestamp"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
