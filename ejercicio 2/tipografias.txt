@@ -1,0 +1,6 @@
+Las tipografías utilizadas fueron:
+
+- 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+- 'Lobster', cursive
+
+La tipografía "Lobster" se encuentra disponible en Google Fonts.
