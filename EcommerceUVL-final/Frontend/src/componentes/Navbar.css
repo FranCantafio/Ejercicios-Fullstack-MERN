@@ -1,0 +1,38 @@
+/* Navbar.css - estilos modernos y minimalistas para Navbar */
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 14px 22px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #ffffff;
+  color: #1e1e2f;
+}
+
+.navbar ul li a.active {
+  background-color: #ffffff;
+  color: #1e1e2f;
+}

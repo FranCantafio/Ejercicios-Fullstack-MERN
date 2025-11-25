@@ -1,0 +1,58 @@
+.alta {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1c1c1c; /* fondo oscuro elegante */
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.alta h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.form-alta {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-alta label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-alta input {
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.form-alta input:focus {
+  outline: none;
+  border-color: #4cafef; /* azul elegante de foco */
+}
+
+.form-alta button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #4cafef; /* azul elegante */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-alta button:hover {
+  background-color: #3a90d1;
+}

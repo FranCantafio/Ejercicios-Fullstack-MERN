@@ -1,0 +1,12 @@
+/* Footer.css - estilo moderno y minimalista */
+
+.footer {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.3);
+  margin-top: auto;
+}

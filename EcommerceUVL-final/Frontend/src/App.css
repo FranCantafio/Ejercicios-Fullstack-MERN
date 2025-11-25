@@ -1,0 +1,135 @@
+.app .carrito-cantidad {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 0.8rem;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    z-index: 1000;
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #111;
+    flex-wrap: wrap;
+}
+
+#logo {
+    height: 54px;
+    width: 10%;
+    background-color: #222; /* fondo oscuro elegante */
+    color: white;
+    text-align: center;
+    line-height: 54px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+
+#barra-busqueda form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    width: 75%;
+    margin: 0 auto;
+    gap: 8px;
+}
+
+
+#barra-busqueda form input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333; /* fondo oscuro elegante */
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+#barra-busqueda form input[type="text"]:focus {
+    box-shadow: 0 0 8px rgba(100, 150, 250, 0.7);
+}
+
+#barra-busqueda form button {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+#barra-busqueda form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #5b0eb8, #1f61d6);
+}
+
+
+#boton-carrito {
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    border-right-width: 15px;
+    right: 15px;
+}
+
+#boton-carrito .icono-carrito {
+    display: inline-block;
+}
+
+/* Contador de productos en el carrito - versión minimalista */
+.app .carrito-cantidad {
+    position: absolute;
+    top: 8px;              /* ligeramente arriba para alinearse con el icono */
+    right: 40px;            /* cerca del borde del botón del carrito */
+    background-color: #ff4d4f;  /* rojo elegante, no chillón */
+    color: white;
+    font-size: 10px;       /* letra pequeña y legible */
+    font-weight: 700;      /* resalta la cantidad */
+    padding: 3px 6px;      /* pequeño espacio interno */
+    border-radius: 50%;    /* círculo perfecto */
+    display: flex;          /* centrado del número */
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;       /* tamaño mínimo del círculo */
+    height: 18px;          /* círculo equilibrado */
+    box-shadow: 0 0 3px rgba(0,0,0,0.3); /* sombra sutil */
+    transition: all 0.2s ease-in-out;    /* suaviza cambios al actualizar la cantidad */
+    z-index: 10;           /* siempre por encima del icono */
+    border-radius: 15px;
+}
+
+/* Ajuste main para header fijo */
+.app main {
+    padding-top: 120px; /* suficiente espacio para header */
+}
